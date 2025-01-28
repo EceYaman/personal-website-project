@@ -6,11 +6,11 @@ import { Footer } from './components/Footer'
 
 function App() {
   return (
-    <>
+    <div className='mx-20 my-5'>
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   )
 }
 
