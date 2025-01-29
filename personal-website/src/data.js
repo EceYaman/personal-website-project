@@ -114,7 +114,7 @@ export const data = {
     tr: {
         header: {
             theme: "Karanlık Mod",
-            language: "Türkçeye Geç",
+            language: "İngilizceye Geç",
             nav: [
                 { a: "Yetenekler", link: "#skills" },
                 { a: "Projeler", link: "#projects" },
