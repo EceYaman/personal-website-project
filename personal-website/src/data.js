@@ -37,17 +37,17 @@ export const data = {
             skills: [
                 {
                     name: "Java Script",
-                    info: "xxx"
+                    info: "JavaScript is a programming language used to create dynamic web pages, running in web browsers. It is a fundamental tool for tasks like user interaction and data processing."
                 
                 },
                 {
                     name: "React.Js",
-                    info: "xxx"
+                    info: "React.js is an open-source JavaScript library developed by Facebook for building user interfaces. Its component-based structure makes it efficient for creating complex applications."
                 
                 },
                 {
-                    name: "Node.JS",
-                    info: "xxx"
+                    name: "HTML",
+                    info: "HTML is a markup language used to structure web pages, organizing text, images, and other content. It defines the basic structure of a webpage and ensures proper display in browsers."
                 
                 },
             ]
@@ -148,15 +148,15 @@ export const data = {
             skills: [
                 {
                     name: "Java Script",
-                    info: "xxx"
+                    info: "Dinamik web sayfaları oluşturmak için kullanılan, web tarayıcılarında çalışan bir programlama dilidir. Kullanıcı etkileşimi ve veri işleme gibi işlemleri gerçekleştirmek için temel araçtır."
                 },
                 {
                     name: "React.Js",
-                    info: "xxx"
+                    info: "Facebook tarafından geliştirilmiş, kullanıcı arayüzleri oluşturmak için kullanılan açık kaynaklı bir JavaScript kütüphanesidir. Bileşen tabanlı yapısı sayesinde, karmaşık uygulamaları daha verimli ve sürdürülebilir şekilde geliştirmeye olanak tanır."
                 },
                 {
-                    name: "Node.JS",
-                    info: "xxx"
+                    name: "HTML",
+                    info: "Web sayfalarını yapılandırmak için kullanılan, metin, görsel, bağlantı gibi içerikleri düzenleyen bir işaretleme dilidir. Web sayfasının temel yapısını belirler ve tarayıcıların içeriği doğru şekilde görüntülemesini sağlar."
                 },
             ]
         },
