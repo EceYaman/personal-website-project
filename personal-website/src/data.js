@@ -19,17 +19,17 @@ export const data = {
                     link:""
                 },
                 {
-                    logo:"",
+                    logo:"/images/github_image.png",
                     text:"Github",
                     link:""
                 },
                 {
-                    logo:"",
+                    logo:"/images/linkedin_image.png",
                     text:"Linkedin",
                     link:""
                 },
         ],
-            profileImage:"",
+            profileImage:"/images/profile_image.png",
 
         },
         skillsSection: {
@@ -131,17 +131,17 @@ export const data = {
                     link: ""
                 },
                 {
-                    logo: "",
-                    text: "Github",
-                    link: ""
+                    logo:"/images/github_image.png",
+                    text:"Github",
+                    link:""
                 },
                 {
-                    logo: "",
-                    text: "Linkedin",
-                    link: ""
+                    logo:"/images/linkedin_image.png",
+                    text:"Linkedin",
+                    link:""
                 },
             ],
-            profileImage: "",
+            profileImage: "/images/profile_image.png",
         },
         skillsSection: {
             title: "Yetenekler",

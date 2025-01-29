@@ -19,7 +19,7 @@ export function Header() {
                     bg-primary transition-all duration-300 ease-in-out`}
                 >
                     <div 
-                        className={`w-4 h-4 bg-yellow rounded-full bg-highlightYellow transition-transform duration-300 ease-in-out 
+                        className={`w-4 h-4 rounded-full bg-highlightYellow transition-transform duration-300 ease-in-out 
                         ${ currData.header.theme == "Dark Theme" ? 'translate-x-5' : 'translate-x-1'}`}
                     />
                 </div>

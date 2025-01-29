@@ -21,6 +21,10 @@ export default {
         alertRed: '#af0c48', 
         successGreen: '#00ab6b', 
       },
+
+      fontFamily: {
+        sans: ['Arial', 'Helvetica', 'sans-serif'],
+      }
       
     },
   },

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './index.css'
 import { Header } from './components/Header'
 import { Main } from './components/main/Main'
 import { Footer } from './components/Footer'
@@ -8,7 +8,7 @@ import { DataContextProvider } from './contexts/DataContext'
 function App() {
   return (
     <DataContextProvider>
-      <div className='mx-20 my-5'>
+      <div className='mr-44 ml-32 mt-6'>
         <Header />
         <Main />
         <Footer />
