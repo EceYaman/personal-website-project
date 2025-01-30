@@ -55,22 +55,16 @@ export const data = {
         },
         profileSection: {
             title:"Profile",
-            profile: 
-                {
-                    title:"Profile",
-                    birthDate: "Date of Birth",
-                    birthDateValue: "01.03.2000",
-                    city: "City",
-                    cityValue: "Izmir",
-                    education: "Education",
-                    educationValue: "Izmir Institute of Technology, Architecture Bachelor's Degree, 2024",
-                    preferredRole: "Preferred Role",
-                    preferredRoleValue: "Frontend, UI"
-                },
+            profile: {
+                "Date of Birth": "01.03.2000" ,
+                "City": "Izmir" ,
+                "Education":"Workintech",
+                "Preferred Role": "Frontend, UI" 
+            },
             aboutMe: 
                 {
-                    tile: "About Me",
-                    info: "xxx"
+                    title: "About Me",
+                    info: "I'm Ece, a graduate of the Department of Architecture at İzmir Institute of Technology. In November 2024, I transitioned to software development by joining the Workintech Software Course. I successfully completed the frontend track of their Full Stack Program, gaining practical experience with JavaScript, HTML, CSS, and React. The projects I worked on enhanced both my technical skills and my problem-solving abilities."
                 }
             
         },
@@ -163,19 +157,14 @@ export const data = {
         profileSection: {
             title: "Profil",
             profile: {
-                title: "Profil",
-                birthDate: "Doğum Tarihi",
-                birthDateValue: "01.03.2000",
-                city: "Şehir",
-                cityValue: "İzmir",
-                education: "Eğitim",
-                educationValue: "İzmir Yüksek Teknoloji Enstitüsü, Mimarlık Lisans, 2024",
-                preferredRole: "Tercih Edilen Rol",
-                preferredRoleValue: "Frontend, UI"
+                "Doğum Tarihi": "01.03.2000" ,
+                "Şehir": "İzmir" ,
+                "Eğitim":"Workintech",
+                "Tercih Edilen Rol": "Frontend, UI" 
             },
             aboutMe: {
-                tile: "Hakkımda",
-                info: "xxx"
+                title: "Hakkımda",
+                info: "Ben Ece, İzmir Yüksek Teknoloji Enstitüsü Mimarlık Bölümü mezunuyum. Kasım 2024'te yazılım geliştirme alanına geçiş yaparak Workintech Yazılım Kursu'na katıldım. Full Stack Programı'nın frontend kısmını başarıyla tamamlayarak JavaScript, HTML, CSS ve React gibi teknolojilerle pratik deneyim kazandım. Üzerinde çalıştığım projeler, hem teknik becerilerimi hem de problem çözme yeteneklerimi geliştirdi."
             }
         },
         projectsSection: {
