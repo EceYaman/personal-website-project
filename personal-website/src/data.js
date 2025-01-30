@@ -72,25 +72,25 @@ export const data = {
             title: "Projects",
             projects: [
                 {
-                    img:"",
+                    img:"/images/pizza_image.png",
                     name:"Pizza",
-                    info:"xxx",
-                    link1:"Github",
-                    link2:"View Site",
+                    info:"This application, developed with React, allows users to place pizza orders. The order form sends data to an API via Axios, and the order summary is displayed with the response. Data is passed between pages using React state lifting, and tests are conducted with Cypress.",
+                    programs: ["react", "redux", "axios" ],
+                    links:{"Github":"https://github.com/EceYaman/pizza-project" , "View Site":"https://pizza-project-xi-self.vercel.app/"}
                 },
                 {
-                    img:"",
+                    img:"/images/witflix_image.png",
                     name:"WitFlix",
-                    info:"xxx",
-                    link1:"Github",
-                    link2:"View Site",
+                    info:"Witflix, developed using HTML and CSS, is a video streaming platform design where users can discover movies and TV series. The homepage features content recommendations and clickable movie cards, offering a sleek user experience. ",
+                    programs: ["html", "css" ],
+                    links:{"Github":"https://github.com/EceYaman/WitFlix" , "View Site":"https://wit-flix-nine.vercel.app/"}
                 },
                 {
-                    img:"",
-                    name:"Form",
-                    info:"xxx",
-                    link1:"Github",
-                    link2:"View Site",
+                    img:"/images/reduxFilm_image.png",
+                    name:"Redux Film",
+                    info:"I developed an application using React and Redux that allows users to view a list of movies and add or remove their favorite films. With centralized state management using Redux, movie data is fetched from an API, and favorite films are updated based on user preferences.",
+                    programs: ["react", "redux", "axios" ],
+                    links:{"Github":"https://github.com/EceYaman/fsweb-s10g2-redux-filmler-solution" , "View Site":"https://fsweb-s10g2-redux-filmler-solution-gamma-pied.vercel.app/movies"}
                 },
             ]
 
@@ -171,25 +171,25 @@ export const data = {
             title: "Projeler",
             projects: [
                 {
-                    img: "",
+                    img: "/images/pizza_image.png",
                     name: "Pizza",
-                    info: "xxx",
-                    link1: "Github",
-                    link2: "Siteyi Görüntüle",
+                    info: "React ile geliştirdiğim bu uygulama, kullanıcıların pizza siparişi verebileceği bir platform sunuyor. Sipariş formu, Axios ile API'ye veri gönderiyor, gelen yanıtla sipariş özeti gösteriliyor. React state lifting yöntemiyle veriler sayfalar arasında aktarılıyor ve Cypress ile testler yapıldı.",
+                    programs: ["react", "redux", "axios" ],
+                    links:{"Github":"https://github.com/EceYaman/pizza-project" , "View Site":"https://pizza-project-xi-self.vercel.app/"}
                 },
                 {
-                    img: "",
+                    img: "/images/witflix_image.png",
                     name: "WitFlix",
-                    info: "xxx",
-                    link1: "Github",
-                    link2: "Siteyi Görüntüle",
+                    info: "HTML ve CSS kullanarak geliştirdiğim Witflix, kullanıcıların film ve dizi içeriklerini keşfedebileceği bir video akış platformu tasarımıdır. Ana sayfada içerik önerileri ve tıklanabilir film kartları ile şık bir kullanıcı deneyimi sunulmuştur.",
+                    programs: ["html", "css", ],
+                    links:{"Github":"https://github.com/EceYaman/WitFlix" , "View Site":"https://wit-flix-nine.vercel.app/"}
                 },
                 {
-                    img: "",
-                    name: "Form",
-                    info: "xxx",
-                    link1: "Github",
-                    link2: "Siteyi Görüntüle",
+                    img: "/images/reduxFilm_image.png",
+                    name: "Redux Film",
+                    info: "React ve redux kullanarak, kullanıcıların film listelerini görüntüleyip favori filmlerini ekleyip çıkarabileceği bir uygulama geliştirdim. Redux ile merkezi durum yönetimi sağlanarak, film verileri API’den çekilmekte ve favori filmler kullanıcının tercihlerine göre güncellenmektedir. ",
+                    programs: ["react", "redux", "axios" ],
+                    links:{"Github":"https://github.com/EceYaman/fsweb-s10g2-redux-filmler-solution" , "View Site":"https://fsweb-s10g2-redux-filmler-solution-gamma-pied.vercel.app/movies/"}
                 },
             ]
         },

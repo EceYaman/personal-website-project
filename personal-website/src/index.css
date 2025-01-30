@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 .btn {
-    @apply px-4 py-2 border border-primaryDark rounded-md text-primaryDark hover:font-bold transition-all duration-300 ease-in-out flex items-center justify-center w-32;
+    @apply w-1/5 py-2 border border-primaryDark rounded-md text-primaryDark text-lg hover:font-bold transition-all duration-300 ease-in-out flex items-center justify-center;
   }
 
-.h-4 {
+.h4 {
   @apply text-textDark font-bold text-3xl;
 }
 
-.h-6 {
-  @apply text-primary text-2xl ;
+.h6 {
+  @apply text-primary font-semibold  text-2xl ;
 }
 

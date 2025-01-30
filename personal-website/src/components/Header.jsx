@@ -38,7 +38,7 @@ export function Header() {
         
                 <nav>
                     {currData.header.nav.map((link, index) => (
-                        <a key={index} href={link.link} className={`px-5 py-3 ${activeLink === index ? 'border-2 border-primary rounded-md text-primary' : 'px-5 py-3 text-textLight'}`} 
+                        <a key={index} href={link.link} className={`px-5 py-3 ${activeLink === index ? 'border border-primary rounded-md text-primary' : 'px-5 py-3 text-textLight'}`} 
                         onClick={() => handleLinkClick(index)} 
                         >
                             {link.a}
