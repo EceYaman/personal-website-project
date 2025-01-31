@@ -20,7 +20,7 @@ export function ProjectsSection() {
                         </div>
                     <nav className="flex justify-between text-base text-primaryDark underline">
                     {Object.entries(project.links).map(([label, url], i) => (
-                        <a key={i} href={url}>{label}</a>
+                        <a key={i} href={url} target="_blank" >{label}</a>
                     ))}
                     </nav>
 

@@ -21,12 +21,12 @@ export const data = {
                 {
                     logo:"/images/github_image.png",
                     text:"Github",
-                    link:""
+                    link:"https://github.com/EceYaman"
                 },
                 {
                     logo:"/images/linkedin_image.png",
                     text:"Linkedin",
-                    link:""
+                    link:"https://www.linkedin.com/in/ece-yaman-a7981b21a/"
                 },
         ],
             profileImage:"/images/profile_image.png",
@@ -86,21 +86,23 @@ export const data = {
                     links:{"Github":"https://github.com/EceYaman/WitFlix" , "View Site":"https://wit-flix-nine.vercel.app/"}
                 },
                 {
-                    img:"/images/reduxFilm_image.png",
-                    name:"Redux Film",
-                    info:"I developed an application using React and Redux that allows users to view a list of movies and add or remove their favorite films. With centralized state management using Redux, movie data is fetched from an API, and favorite films are updated based on user preferences.",
+                    img:"/images/movielist_image.png",
+                    name:"Redux Watchlist",
+                    info:"I developed an application using React and Redux that allows users to view movies and add or remove their favorite movies from their list. By using Redux for state management, the movie data is fetched from an API and the list is updated based on the user's preferences.",
                     programs: ["react", "redux", "axios" ],
-                    links:{"Github":"https://github.com/EceYaman/fsweb-s10g2-redux-filmler-solution" , "View Site":"https://fsweb-s10g2-redux-filmler-solution-gamma-pied.vercel.app/movies"}
+                    links:{"Github":"https://github.com/Workintech/fsweb-s10g3-redux-watchlist-solution" , "View Site":"https://fsweb-s10g3-redux-watchlist-solution-lac.vercel.app/"}
                 },
             ]
 
         },
         footer: {
-            text: "Let's work together on your next product",
+            title: "Let's work together on your next product",
             mail:"eceymn35@gmail.com",
-            link1:"Personal Blog",
-            link2:"Github",
-            lin3:"Linkedin"
+            links: [
+                { name: "Personal Blog", url: "https://www.example.com", color: "text-textDark" },
+                { name: "Github", url: "https://github.com/EceYaman", color: "text-successGreen" },
+                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a", color: "text-blue-700" }
+              ]
         }
     },
 
@@ -127,12 +129,12 @@ export const data = {
                 {
                     logo:"/images/github_image.png",
                     text:"Github",
-                    link:""
+                    link:"https://github.com/EceYaman"
                 },
                 {
                     logo:"/images/linkedin_image.png",
                     text:"Linkedin",
-                    link:""
+                    link:"https://www.linkedin.com/in/ece-yaman-a7981b21a/"
                 },
             ],
             profileImage: "/images/profile_image.png",
@@ -175,30 +177,32 @@ export const data = {
                     name: "Pizza",
                     info: "React ile geliştirdiğim bu uygulama, kullanıcıların pizza siparişi verebileceği bir platform sunuyor. Sipariş formu, Axios ile API'ye veri gönderiyor, gelen yanıtla sipariş özeti gösteriliyor. React state lifting yöntemiyle veriler sayfalar arasında aktarılıyor ve Cypress ile testler yapıldı.",
                     programs: ["react", "redux", "axios" ],
-                    links:{"Github":"https://github.com/EceYaman/pizza-project" , "View Site":"https://pizza-project-xi-self.vercel.app/"}
+                    links:{"Github":"https://github.com/EceYaman/pizza-project" , "Siteyi Gör":"https://pizza-project-xi-self.vercel.app/"}
                 },
                 {
                     img: "/images/witflix_image.png",
                     name: "WitFlix",
                     info: "HTML ve CSS kullanarak geliştirdiğim Witflix, kullanıcıların film ve dizi içeriklerini keşfedebileceği bir video akış platformu tasarımıdır. Ana sayfada içerik önerileri ve tıklanabilir film kartları ile şık bir kullanıcı deneyimi sunulmuştur.",
                     programs: ["html", "css", ],
-                    links:{"Github":"https://github.com/EceYaman/WitFlix" , "View Site":"https://wit-flix-nine.vercel.app/"}
+                    links:{"Github":"https://github.com/EceYaman/WitFlix" , "Siteyi Gör":"https://wit-flix-nine.vercel.app/"}
                 },
                 {
-                    img: "/images/reduxFilm_image.png",
-                    name: "Redux Film",
-                    info: "React ve redux kullanarak, kullanıcıların film listelerini görüntüleyip favori filmlerini ekleyip çıkarabileceği bir uygulama geliştirdim. Redux ile merkezi durum yönetimi sağlanarak, film verileri API’den çekilmekte ve favori filmler kullanıcının tercihlerine göre güncellenmektedir. ",
+                    img: "/images/movielist_image.png",
+                    name: "Redux Watchlist",
+                    info: "React ve Redux kullanarak, kullanıcıların filmleri görüntüleyip beğendikleri filmleri listelerine ekleyip çıkarabildikleri bir uygulama geliştirdim. Redux ile merkezi durum yönetimi sağlayarak, film verilerini API’den çekiyor ve kullanıcıların tercihlerine göre listeyi güncelliyorum.",
                     programs: ["react", "redux", "axios" ],
-                    links:{"Github":"https://github.com/EceYaman/fsweb-s10g2-redux-filmler-solution" , "View Site":"https://fsweb-s10g2-redux-filmler-solution-gamma-pied.vercel.app/movies/"}
+                    links:{"Github":"https://github.com/Workintech/fsweb-s10g3-redux-watchlist-solution" , "Siteyi Gör":"https://fsweb-s10g3-redux-watchlist-solution-lac.vercel.app/"}
                 },
             ]
         },
         footer: {
-            text: "Bir sonraki ürününüz üzerinde birlikte çalışalım",
+            title: "Bir sonraki ürününüz üzerinde birlikte çalışalım",
             mail: "eceymn35@gmail.com",
-            link1: "Kişisel Blog",
-            link2: "Github",
-            lin3: "Linkedin"
+            links: [
+                { name: "Kişisel Blog", url: "https://www.example.com", color: "text-textDark" },
+                { name: "Github", url: "https://github.com/EceYaman", color: "text-successGreen" },
+                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a", color: "text-primary" }
+              ]
         }
     },
     
