@@ -4,8 +4,6 @@ import { useData } from "../contexts/DataContext";
 export function Header() { 
     const { currData, toggleLanguage } = useData(); 
 
-    const [activeLink, setActiveLink] = useState(2); 
-
     const handleLinkClick = (index) => {
         setActiveLink(index); 
     };
@@ -38,8 +36,7 @@ export function Header() {
         
                 <nav>
                     {currData.header.nav.map((link, index) => (
-                        <a key={index} href={link.link} className={`px-5 py-3 ${activeLink === index ? 'border border-primary rounded-md text-primary' : 'px-5 py-3 text-textLight'}`} 
-                        onClick={() => handleLinkClick(index)} 
+                        <a key={index} href={link.link} className={`px-5 py-3  ${index === 2 ? 'border border-primary rounded-md text-primary' : 'text-textLight'}`} onClick={() => handleLinkClick(index)} 
                         >
                             {link.a}
                         </a>
@@ -49,3 +46,5 @@ export function Header() {
         </div>
     )
 }
+
+ 
