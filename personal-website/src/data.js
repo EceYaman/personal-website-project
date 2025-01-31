@@ -1,8 +1,8 @@
 export const data = {
     en: {
         header:{
-            theme:"Dark Mode",
-            language:"Switch to Turkish",
+            theme:["DARK MODE", "LIGHT MODE" ],
+            language:"TÜRKÇEYE GEÇ",
             nav: [
                 { a: "Skills", link: "#skills" },
                 { a: "Projects", link: "#projects" },
@@ -109,8 +109,8 @@ export const data = {
 
     tr: {
         header: {
-            theme: "Karanlık Mod",
-            language: "İngilizceye Geç",
+            theme: ["KOYU MOD", "AÇIK MOD"],
+            language: "SWITCH TO ENGLISH",
             nav: [
                 { a: "Yetenekler", link: "#skills" },
                 { a: "Projeler", link: "#projects" },

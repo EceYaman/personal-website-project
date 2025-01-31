@@ -16,10 +16,25 @@ export default {
         logoLight: '#eeebff', 
         logoDark: '#7b61ff', 
 
-        backgroundGray: '#f9f9f9', 
+        bgGray: '#f9f9f9', 
         highlightYellow: '#ffe86e', 
         alertRed: '#af0c48', 
         successGreen: '#00ab6b', 
+
+        bgDark:"#252128",
+        bgDark2: "#141414",
+
+        primary2:"#e1e1ff",
+        primaryDark2:"#b7aaff",
+
+        textLight2:"#ffffff",
+        textDark2:"#aebccf",
+
+        logoLight2: '#8f88ff', 
+        logoDark2: '#4731d3', 
+
+        bgGray2: '#3a3a3a', 
+        
       },
 
       fontFamily: {

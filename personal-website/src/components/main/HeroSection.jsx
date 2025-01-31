@@ -7,7 +7,7 @@ export function HeroSection() {
             <div className="max-w-2xl">
 
                 <div className="flex items-center mb-2">
-                    <div className="w-16 border-t-2 border-gray-400"></div>
+                    <div className="w-16 border border-primaryDark"></div>
                     <p className="mx-4 text-xl text-primary">{currData.heroSection.name}</p>
                 </div>
                 

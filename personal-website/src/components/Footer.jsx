@@ -3,7 +3,7 @@ import { useData } from "../contexts/DataContext";
 export function Footer() { 
     const { currData } = useData();  
     return(
-        <div className="bg-backgroundGray w-full left-0 absolute mt-28 py-28 pr-44 pl-32">
+        <div className="bg-bgGray w-full left-0 absolute mt-28 py-28 pr-44 pl-32">
             <h4 className="h4 max-w-sm">{currData.footer.title}</h4>
 
             <div className="flex justify-between mt-12 font-medium">

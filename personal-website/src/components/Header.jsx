@@ -1,30 +1,33 @@
 import { useState } from "react";
 import { useData } from "../contexts/DataContext";
+import { useDarkMode } from "../contexts/ThemeContext";
 
 export function Header() { 
     const { currData, toggleLanguage } = useData(); 
+    const { darkMode, toggleDarkMode } = useDarkMode();
 
     const handleLinkClick = (index) => {
         setActiveLink(index); 
     };
 
     return(
-        <div>
-            <div className="flex justify-end mb-10 text-sm text-textLight">
-               <div className="mx-2">
-                <div 
-                    className={`w-10 h-5 rounded-full cursor-pointer flex items-center 
-                    bg-primary transition-all duration-300 ease-in-out`}
+        <>
+            <div className="flex justify-end mb-10 text-xs font-bold text-textLight items-center gap-x-3">
+                
+                <button
+                    onClick={toggleDarkMode}
+                    className="w-10 h-5 rounded-full bg-primary flex items-center justify-between p-0 transition-all duration-300 ease-in-out"
                 >
-                    <div 
-                        className={`w-4 h-4 rounded-full bg-highlightYellow transition-transform duration-300 ease-in-out 
-                        ${ currData.header.theme == "Dark Theme" ? 'translate-x-5' : 'translate-x-1'}`}
+                    <span
+                    className={`w-4 h-4 rounded-full bg-highlightYellow transition-transform duration-300 ease-in-out 
+                        ${darkMode ? 'translate-x-5' : 'translate-x-1'}`}
                     />
-                </div>
-                </div>
-                <button>{currData.header.theme}</button> 
-                <span className="mx-2">|</span>
+                </button>
+            
+                <p>{darkMode ? currData.header.theme[1] : currData.header.theme[0]}</p>
+                <span>|</span>
                 <button onClick={toggleLanguage}>{currData.header.language}</button> 
+
             </div>
             
             <div className="flex items-center justify-between">
@@ -43,7 +46,7 @@ export function Header() {
                     ))}
                 </nav>
             </div>
-        </div>
+        </>
     )
 }
 
