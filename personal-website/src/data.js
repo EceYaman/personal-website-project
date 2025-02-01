@@ -130,11 +130,13 @@ export const data = {
                 },
                 {
                     logo:"/images/github_image.png",
+                    logoDark:"/images/github_2_image.png",
                     text:"Github",
                     link:"https://github.com/EceYaman"
                 },
                 {
                     logo:"/images/linkedin_image.png",
+                    logoDark:"/images/linkedin_2_image.png",
                     text:"Linkedin",
                     link:"https://www.linkedin.com/in/ece-yaman-a7981b21a/"
                 },

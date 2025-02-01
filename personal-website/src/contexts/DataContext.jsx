@@ -1,20 +1,20 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { data } from "../data";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export const DataContext = createContext();
 
 export function DataContextProvider({ children }) {
-  const [language, setLanguage] = useState("en"); 
+  const [language, setLanguage] = useLocalStorage("language", "en");
   const [currData, setCurrData] = useState(data.en); 
 
+  useEffect(() => {
+    setCurrData(data[language]);
+  }, [language]);
+
   const toggleLanguage = () => {
-    if (language === "en") {
-      setLanguage("tr");
-      setCurrData(data.tr); 
-    } else {
-      setLanguage("en");
-      setCurrData(data.en); 
-    }
+    const newLanguage = language === "en" ? "tr" : "en";
+    setLanguage(newLanguage); 
   };
 
   return (
