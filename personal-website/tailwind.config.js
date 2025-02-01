@@ -19,22 +19,24 @@ export default {
         bgGray: '#f9f9f9', 
         highlightYellow: '#ffe86e', 
         alertRed: '#af0c48', 
-        successGreen: '#00ab6b', 
+        successGreen: '#00ab6b',
+        linkBlue:'#0077b5' , 
 
         bgDark:"#252128",
         bgDark2: "#141414",
 
-        primary2:"#e1e1ff",
+        primary2:"#d5d0f4",
         primaryDark2:"#b7aaff",
 
-        textLight2:"#ffffff",
+        textLight2:"#f4f4f4",
         textDark2:"#aebccf",
 
         logoLight2: '#8f88ff', 
         logoDark2: '#4731d3', 
 
         bgGray2: '#3a3a3a', 
-        
+        successGreen2: '#17d18b',
+        linkBlue2:'#0ba6f6' ,
       },
 
       fontFamily: {

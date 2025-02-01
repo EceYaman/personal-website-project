@@ -20,11 +20,13 @@ export const data = {
                 },
                 {
                     logo:"/images/github_image.png",
+                    logoDark:"/images/github_2_image.png",
                     text:"Github",
                     link:"https://github.com/EceYaman"
                 },
                 {
                     logo:"/images/linkedin_image.png",
+                    logoDark:"/images/linkedin_2_image.png",
                     text:"Linkedin",
                     link:"https://www.linkedin.com/in/ece-yaman-a7981b21a/"
                 },
@@ -99,9 +101,9 @@ export const data = {
             title: "Let's work together on your next product",
             mail:"eceymn35@gmail.com",
             links: [
-                { name: "Personal Blog", url: "https://www.example.com", color: "text-textDark" },
-                { name: "Github", url: "https://github.com/EceYaman", color: "text-successGreen" },
-                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a", color: "text-blue-700" }
+                { name: "Personal Blog", url: "https://www.example.com", color: "text-textDark", colorDark:"text-primary2" },
+                { name: "Github", url: "https://github.com/EceYaman", color: "text-successGreen", colorDark:"text-successGreen2" },
+                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a", color: "text-linkBlue", colorDark: "text-linkBlue2" }
               ]
         }
     },
@@ -199,9 +201,9 @@ export const data = {
             title: "Bir sonraki ürününüz üzerinde birlikte çalışalım",
             mail: "eceymn35@gmail.com",
             links: [
-                { name: "Kişisel Blog", url: "https://www.example.com", color: "text-textDark" },
-                { name: "Github", url: "https://github.com/EceYaman", color: "text-successGreen" },
-                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a", color: "text-primary" }
+                { name: "Kişisel Blog", url: "https://www.example.com", color: "text-textDark", colorDark:"text-primary2" },
+                { name: "Github", url: "https://github.com/EceYaman", color: "text-successGreen", colorDark:"text-successGreen2" },
+                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a", color: "text-linkBlue", colorDark: "text-linkBlue2" }
               ]
         }
     },
