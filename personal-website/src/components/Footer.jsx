@@ -6,12 +6,12 @@ export function Footer() {
     const { darkMode} = useDarkMode();
 
     return(
-        <div className={`w-full left-0 absolute mt-28 py-28 pr-44 pl-32 ${darkMode ? "bg-bgDark2" : "bg-bgGray"}`}>
-            <h4 className={`max-w-md ${darkMode ? "main-title-dark" : "main-title"}`}>{currData.footer.title}</h4>
+        <div className={`w-full absolute xl:py-28 xl:pr-44 xl:pl-32 sm:px-4 lg:px-12 sm:py-6 lg:py-20 ${darkMode ? "bg-bgDark2" : "bg-bgGray"}`}>
+            <h4 className={`sm:max-w-xs lg:max-w-sm xl:max-w-md ${darkMode ? "main-title-dark" : "main-title"}`}>{currData.footer.title}</h4>
 
             <div className="flex justify-between mt-12 font-medium">
                 <nav>
-                    <a className={`underline ${darkMode ? "text-primaryDark2" : "text-alertRed"}`}>{currData.footer.mail}</a>
+                    <a className={`underline sm:text-xs lg:text-sm xl:text-base ${darkMode ? "text-primaryDark2" : "text-alertRed"}`}>{currData.footer.mail}</a>
                 </nav> 
 
                 <nav>
@@ -19,7 +19,7 @@ export function Footer() {
                     <a 
                         key={index}
                         href={link.url}
-                        className={`ml-7 ${darkMode ? link.colorDark : link.color}`} 
+                        className={`ml-7 sm:text-xs lg:text-s xl:text-base ${darkMode ? link.colorDark : link.color}`} 
                         target="_blank" 
                     >
                         {link.name}

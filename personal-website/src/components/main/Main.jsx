@@ -8,15 +8,21 @@ export function Main() {
     return(
         <div>
             <HeroSection />
+            
             <div id="skills">
                 <SkillsSection />
             </div>
-            <hr className="my-16 border border-logoLight"/>
+
+            <hr className="sm:my-10 lg:my-12 xl:my-16 border border-logoLight"/>
+
             <ProfileSection />
-            <hr className="my-16 border border-logoLight"/>
+
+            <hr className="sm:my-10 lg:my-12 xl:my-16 border border-logoLight"/>
+
             <div id="projects">
                 <ProjectsSection />
             </div>
+
         </div>
     )
 }

@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 .btn {
-    @apply w-1/5 py-2 border border-primaryDark rounded-md text-primaryDark text-lg hover:font-bold transition-all duration-300 ease-in-out flex items-center justify-center;
+    @apply sm:w-[30%] lg:w-1/4 xl:w-1/5 sm:py-1 lg:py-1 xl:py-2 border border-primaryDark rounded-md text-primaryDark sm:text-xs lg:text-sm xl:text-lg hover:font-bold transition-all duration-300 ease-in-out flex items-center justify-center;
   }
 
 .main-title {
-  @apply text-textDark font-bold text-4xl;
+  @apply text-textDark font-bold xl:text-4xl;
 }
 
 .sub-title {
-  @apply text-primary font-medium text-2xl ;
+  @apply text-primary font-medium xl:text-2xl ;
 }
 
 .btn-dark {
-  @apply bg-bgGray2 w-1/5 py-2 border border-primary2 rounded-md text-primary2 text-lg hover:font-bold transition-all duration-300 ease-in-out flex items-center justify-center;
+  @apply sm:w-[30%] lg:w-1/4 xl:w-1/5 sm:py-1 lg:py-1 xl:py-2 border border-primary2 rounded-md text-primary2 bg-bgGray2 sm:text-xs lg:text-sm xl:text-lg hover:font-bold transition-all duration-300 ease-in-out flex items-center justify-center;
 }
 
 .main-title-dark {
-  @apply text-textDark2 font-bold text-4xl;
+  @apply text-textDark2 font-bold xl:text-4xl;
 }
 
 .sub-title-dark {
-  @apply text-primaryDark2 font-medium  text-2xl ;
+  @apply text-primaryDark2 font-medium  xl:text-2xl ;
 }

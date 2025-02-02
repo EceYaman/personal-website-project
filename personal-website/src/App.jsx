@@ -10,11 +10,13 @@ function App() {
   const { darkMode} = useDarkMode();
 
   return (
-    <div className={darkMode ? "bg-bgDark pr-44 pl-32 pt-6 pb-28 w-full absolute" : "mr-44 ml-32 pt-6"}>
+    <div>
+      <div className={`w-full pt-6 sm:px-4 sm:pb-16 lg:px-12 lg:pb-20 xl:pr-44 xl:pl-32 xl:pb-28 ${darkMode ? "bg-bgDark" : "bg-white"}`}>
         <Header />
         <Main />
-        <Footer />
       </div>
+       <Footer />
+    </div>
   )
 }
 

@@ -41,7 +41,13 @@ export default {
 
       fontFamily: {
         sans: ['Arial', 'Helvetica', 'sans-serif'],
-      }
+      },
+
+      screens: {
+        sm: '480px',   
+        lg: '767px',   
+        xl: '1280px',
+      },
       
     },
   },
