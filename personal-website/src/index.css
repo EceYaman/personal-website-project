@@ -25,3 +25,7 @@
 .sub-title-dark {
   @apply text-primaryDark2 font-medium  xl:text-2xl ;
 }
+
+.toast-custom {
+  @apply sm:max-w-[45%] sm:text-xs lg:max-w-[70%] lg:text-sm xl:max-w-[80%] xl:text-sm ;
+}

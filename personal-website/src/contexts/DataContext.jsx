@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { data } from "../data";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export const DataContext = createContext();
 
@@ -23,6 +24,13 @@ export function DataContextProvider({ children }) {
       }
     };
     sendData();  
+
+    if (language === "en") {
+      toast("Welcome! Let’s work together..", { autoClose: 3000, className:"toast-custom", position: "top-left"});
+    } else if (language === "tr") {
+      toast("Hoş geldiniz! Birlikte çalışalım..", { autoClose: 3000, className:"toast-custom",position: "top-left" });
+    }
+
   }, [language]); 
 
   const toggleLanguage = () => {
