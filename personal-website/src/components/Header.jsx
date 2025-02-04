@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useData } from "../contexts/DataContext";
 import { useDarkMode } from "../contexts/ThemeContext";
 
@@ -6,6 +6,21 @@ export function Header() {
     const { currData, toggleLanguage } = useData(); 
     const { darkMode, toggleDarkMode } = useDarkMode();
 
+    useEffect(() => {
+        const handleKeyPress = (e) => {
+            if (e.key === "d" || e.key === "D") {
+                toggleDarkMode();
+            }
+        };
+        window.addEventListener("keydown", handleKeyPress);
+        return () => {window.removeEventListener("keydown", handleKeyPress)};
+    }, []);
+
+    const handleScroll = (e, target) => {
+        e.preventDefault();
+        const targetElement = document.querySelector(target);
+        window.scrollTo({top: targetElement.offsetTop, behavior: 'smooth'});
+    };
 
     return(
         <>
@@ -13,10 +28,10 @@ export function Header() {
                 
                 <button
                     onClick={toggleDarkMode}
-                    className={`w-11 h-5 rounded-full flex items-center justify-between p-0 trans ${darkMode ? 'bg-bgGray2' : 'bg-primary'}`}
+                    className={`w-11 h-5 rounded-full flex items-center justify-between p-0 trans hover:scale-125 ${darkMode ? 'bg-bgGray2' : 'bg-primary'}`}
                 >
                     <span
-                        className={`w-4 h-4 rounded-full bg-highlightYellow absolute trans
+                        className={`w-4 h-4 rounded-full bg-highlightYellow absolute trans 
                             ${darkMode ? 'translate-x-1' : 'translate-x-6'}`}
                     />
                     <span
@@ -29,7 +44,7 @@ export function Header() {
                     {darkMode ? currData.header.theme[1] : currData.header.theme[0]}
                 </p>
                 <span>|</span>
-                <button className={darkMode ? "text-primary2" : "text-primary"} onClick={toggleLanguage}>{currData.header.language}</button> 
+                <button className={`hover:scale-125 ${darkMode ? "text-primary2" : "text-primary"}`} onClick={toggleLanguage}>{currData.header.language}</button> 
 
             </div>
             
@@ -43,8 +58,8 @@ export function Header() {
         
                 <nav className="flex justify-end items-center sm:w-[55%] sm:gap-x-7 lg:w-1/2 lg:gap-x-14 xl:w-2/5 xl:gap-x-24">
                     {currData.header.nav.map((link, index) => (
-                        <a key={index} href={link.link} 
-                        className={`${index === 2 ? 'btn btn-base': 'text-textLight'}`} 
+                        <a key={index} href={link.link}  onClick={(e) => handleScroll(e, link.link)} 
+                        className={`trans ${index === 2 ? 'btn btn-base' : 'text-textLight hover:text-primary hover:translate-y-[-5px]'} `}
                         >
                             {link.a}
                         </a>

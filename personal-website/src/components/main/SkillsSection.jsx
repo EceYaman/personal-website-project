@@ -12,7 +12,7 @@ export function SkillsSection() {
             </h4>
             <div className="flex lg:flex-row justify-between sm:flex-col sm:items-center">
                 {currData.skillsSection.skills.map((skill, index) => (
-                    <div key={index} className="sm:w-[70%] xl:max-w-xs">
+                    <div key={index} className="sm:w-[70%] lg:w-[30%] xl:max-w-xs">
                         <h6 className={darkMode ? "sub-title-dark" : "sub-title"}>
                             {skill.name}
                         </h6>
