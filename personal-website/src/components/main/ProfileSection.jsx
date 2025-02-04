@@ -11,18 +11,18 @@ export function ProfileSection() {
                 {currData.profileSection.title}
             </h4>
 
-            <div className="flex justify-between">
-                <div className="sm:w-[35%] xl:w-1/4">
-                    <h6 className={`sm:my-2 lg:my-3 xl:my-5 ${darkMode ? "sub-title-dark" : "sub-title"}`}>
+            <div className="flex lg:flex-row justify-between sm:flex-col sm:items-center">
+                <div className="sm:w-[70%] lg:w-1/4 xl:max-w-xs">
+                    <h6 className= {darkMode ? "sub-title-dark" : "sub-title"}>
                         {currData.profileSection.title}
                     </h6>
 
                     {Object.entries(currData.profileSection.profile).map(([label, value]) => (
-                            <div key={label} className="my-3 flex justify-between sm:text-xs lg:text-sm xl:text-base">
+                            <div key={label} className="mb-2 flex justify-between sm:text-xs lg:text-sm xl:text-lg">
                                 <p className={`font-bold ${darkMode ? "text-textLight2" : "text-textDark"}`}>
                                     {label}
                                 </p> 
-                                <p className={darkMode ? "text-textLight2" : "text-textLight"}>
+                                <p className={darkMode ? "text-textLight2" : "text-textDark"}>
                                     {value}
                                 </p>
                             </div>
@@ -30,13 +30,15 @@ export function ProfileSection() {
 
                 </div>
 
-                <div className="w-[63%]">
-                    <h6 className={`sm:my-2 lg:my-3 xl:my-5 ${darkMode ? "sub-title-dark" : "sub-title"}`}>
+                <div className="xl:max-w-3xl lg:max-w-md sm:max-w-xs">
+                    <h6 className={darkMode ? "sub-title-dark" : "sub-title"}>
                         {currData.profileSection.aboutMe.title}
                     </h6>
-                    <p className={`sm:text-xs lg:text-sm xl:text-base leading-8 ${darkMode ? "text-textLight2" : "text-textLight"}`}>
-                        {currData.profileSection.aboutMe.info}
-                    </p>
+                    <div className={`sm:text-xs lg:text-sm xl:text-base leading-8 ${darkMode ? "text-textLight2" : "text-textLight"}`}>
+                        <p>{currData.profileSection.aboutMe.info1}</p>
+                        <p className="mt-4">{currData.profileSection.aboutMe.info2}</p>
+                    </div>
+                    
                 </div>
                 
             </div>

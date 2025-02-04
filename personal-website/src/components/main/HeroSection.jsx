@@ -6,7 +6,7 @@ export function HeroSection() {
     const { darkMode} = useDarkMode();
 
     return(
-        <div className="flex justify-between sm:my-10 lg:my-16 xl:my-20">
+        <div className="flex lg:flex-row justify-between sm:flex-col sm:items-center sm:my-10 lg:my-16 xl:my-20">
             <div className="w-full sm:max-w-xs lg:max-w-2xl">
 
                 <div className="flex items-center">
@@ -28,7 +28,7 @@ export function HeroSection() {
                         <button 
                             key={index}
                             onClick={() => window.location.href = social.link} 
-                            className={darkMode ? "btn-dark" : "btn"}
+                            className={`btn ${index === 0 ? (darkMode ? 'btn-pri-dark' : 'btn-pri') : (darkMode ? 'btn-dark' : 'btn-base')}`}
                         >
                             {social.logo && (
                                 <img 
@@ -44,7 +44,7 @@ export function HeroSection() {
                 </div>
             </div>
 
-            <div className="w-full sm:max-w-md lg:max-w-lg sm:pt-10 lg:pt-10 xl:pt-14">
+            <div className="w-full sm:max-w-xs lg:max-w-lg sm:pt-10 lg:pt-10 xl:pt-14">
                 <img src={currData.heroSection.profileImage} className="w-full rounded-lg"/>
             </div>
         </div>

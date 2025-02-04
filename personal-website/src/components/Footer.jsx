@@ -10,7 +10,8 @@ export function Footer() {
             <h4 className={`sm:max-w-xs lg:max-w-sm xl:max-w-md ${darkMode ? "main-title-dark" : "main-title"}`}>{currData.footer.title}</h4>
 
             <div className="flex justify-between mt-12 font-medium">
-                <nav>
+                <nav className="flex gap-x-2 items-center">
+                    <img src={currData.footer.icon} className="sm:h-3 lg:h-4 xl:h-5"/>
                     <a className={`underline sm:text-xs lg:text-sm xl:text-base ${darkMode ? "text-primaryDark2" : "text-alertRed"}`}>{currData.footer.mail}</a>
                 </nav> 
 

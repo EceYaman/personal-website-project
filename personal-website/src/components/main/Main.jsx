@@ -13,11 +13,11 @@ export function Main() {
                 <SkillsSection />
             </div>
 
-            <hr className="sm:my-10 lg:my-12 xl:my-16 border border-logoLight"/>
+            <hr className="sm:my-10 lg:my-12 xl:my-16  border-primary2"/>
 
             <ProfileSection />
 
-            <hr className="sm:my-10 lg:my-12 xl:my-16 border border-logoLight"/>
+            <hr className="sm:my-10 lg:my-12 xl:my-16  border-primary2"/>
 
             <div id="projects">
                 <ProjectsSection />

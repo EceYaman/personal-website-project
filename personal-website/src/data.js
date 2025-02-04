@@ -2,7 +2,7 @@ export const data = {
     en: {
         header:{
             theme:["DARK MODE", "LIGHT MODE" ],
-            language:"TÜRKÇEYE GEÇ",
+            language:"TÜRKÇE",
             nav: [
                 { a: "Skills", link: "#skills" },
                 { a: "Projects", link: "#projects" },
@@ -61,12 +61,13 @@ export const data = {
                 "Date of Birth": "01.03.2000" ,
                 "City": "Izmir" ,
                 "Education":"Workintech",
-                "Preferred Role": "Frontend, UI" 
+                "Preferred Role": "Frontend" 
             },
             aboutMe: 
                 {
                     title: "About Me",
-                    info: "I'm Ece, a graduate of the Department of Architecture at İzmir Institute of Technology. In November 2024, I transitioned to software development by joining the Workintech Software Course. I successfully completed the frontend track of their Full Stack Program, gaining practical experience with JavaScript, HTML, CSS, and React. The projects I worked on enhanced both my technical skills and my problem-solving abilities."
+                    info1: "After earning my degree in Architecture, I decided to pursue coding. In November 2024, I joined the Workintech Software Course and completed the frontend track in February 2025. ",
+                    info2: "Through hands-on projects during my frontend training, I developed strong technical and problem-solving skills. I’m eager to contribute to tech!"
                 }
             
         },
@@ -99,6 +100,7 @@ export const data = {
         },
         footer: {
             title: "Let's work together on your next product",
+            icon:"/images/hand_icon_image.png",
             mail:"eceymn35@gmail.com",
             links: [
                 { name: "Personal Blog", url: "https://www.example.com", color: "text-textDark", colorDark:"text-primary2" },
@@ -112,7 +114,7 @@ export const data = {
     tr: {
         header: {
             theme: ["KOYU MOD", "AÇIK MOD"],
-            language: "SWITCH TO ENGLISH",
+            language: "ENGLISH",
             nav: [
                 { a: "Yetenekler", link: "#skills" },
                 { a: "Projeler", link: "#projects" },
@@ -166,11 +168,12 @@ export const data = {
                 "Doğum Tarihi": "01.03.2000" ,
                 "Şehir": "İzmir" ,
                 "Eğitim":"Workintech",
-                "Tercih Edilen Rol": "Frontend, UI" 
+                "Tercih Edilen Rol": "Frontend" 
             },
             aboutMe: {
                 title: "Hakkımda",
-                info: "Ben Ece, İzmir Yüksek Teknoloji Enstitüsü Mimarlık Bölümü mezunuyum. Kasım 2024'te yazılım geliştirme alanına geçiş yaparak Workintech Yazılım Kursu'na katıldım. Full Stack Programı'nın frontend kısmını başarıyla tamamlayarak JavaScript, HTML, CSS ve React gibi teknolojilerle pratik deneyim kazandım. Üzerinde çalıştığım projeler, hem teknik becerilerimi hem de problem çözme yeteneklerimi geliştirdi."
+                info1: "Mimarlıktan mezun olduktan sonra kodlamaya yönelmeye karar verdim. Kasım 2024'te Workintech Yazılım Kursuna katıldım ve Şubat 2025'te front-end bölümünü tamamladım.",
+                info2: "Front-end eğitimim sırasında uygulamalı projeler aracılığıyla güçlü teknik ve problem çözme becerileri geliştirdim. Teknolojiye katkıda bulunmak için can atıyorum!"
             }
         },
         projectsSection: {
@@ -201,6 +204,7 @@ export const data = {
         },
         footer: {
             title: "Bir sonraki ürününüz üzerinde birlikte çalışalım",
+            icon:"/images/hand_icon_image.png",
             mail: "eceymn35@gmail.com",
             links: [
                 { name: "Kişisel Blog", url: "https://www.example.com", color: "text-textDark", colorDark:"text-primary2" },

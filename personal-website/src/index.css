@@ -2,20 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
-    @apply sm:w-[30%] lg:w-1/4 xl:w-1/5 sm:py-1 lg:py-1 xl:py-2 border border-primaryDark rounded-md text-primaryDark sm:text-xs lg:text-sm xl:text-lg hover:font-bold transition-all duration-300 ease-in-out flex items-center justify-center;
-  }
+.btn{
+  @apply sm:w-[30%] lg:w-1/4 xl:w-1/5 sm:py-1 lg:py-1 xl:py-2 border rounded-md sm:text-xs lg:text-sm xl:text-lg hover:font-bold transition-all duration-300 ease-in-out flex items-center justify-center;
+}
+
+.btn-base {
+    @apply  border-primaryDark text-primaryDark bg-white;
+}
+
+.btn-pri {
+    @apply  border-primaryDark  bg-primaryDark text-white ;
+}
+
+.btn-dark {
+  @apply border-primary2  text-primary2 bg-bgGray2;
+}
+
+.btn-pri-dark {
+  @apply border-primary2  text-bgDark bg-primary2;
+}
 
 .main-title {
   @apply text-textDark font-bold xl:text-4xl;
 }
 
 .sub-title {
-  @apply text-primary font-medium xl:text-2xl ;
-}
-
-.btn-dark {
-  @apply sm:w-[30%] lg:w-1/4 xl:w-1/5 sm:py-1 lg:py-1 xl:py-2 border border-primary2 rounded-md text-primary2 bg-bgGray2 sm:text-xs lg:text-sm xl:text-lg hover:font-bold transition-all duration-300 ease-in-out flex items-center justify-center;
+  @apply text-primary font-medium xl:text-3xl sm:my-2 lg:my-4 ;
 }
 
 .main-title-dark {
@@ -23,9 +35,9 @@
 }
 
 .sub-title-dark {
-  @apply text-primaryDark2 font-medium  xl:text-2xl ;
+  @apply text-primaryDark2 font-medium  xl:text-2xl sm:my-2 lg:my-4 ;
 }
 
 .toast-custom {
-  @apply sm:max-w-[45%] sm:text-xs lg:max-w-[70%] lg:text-sm xl:max-w-[80%] xl:text-sm ;
+  @apply sm:max-w-[45%] sm:text-xs lg:max-w-[80%] lg:text-sm xl:max-w-full xl:text-base ;
 }

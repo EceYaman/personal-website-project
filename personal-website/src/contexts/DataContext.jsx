@@ -11,27 +11,30 @@ export function DataContextProvider({ children }) {
   const [currData, setCurrData] = useState(data.en); 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const sendData = async () => {
-      try {
-        const response = await axios.post('https://reqres.in/api/workintech', data[language]);
-        setCurrData(response.data);  
-        setLoading(false); 
-        console.log(response.data);  
-      } catch (error) {
-        console.error('Error:', error);
-        setLoading(false);  
-      }
-    };
-    sendData();  
-
-    if (language === "en") {
-      toast("Welcome! Let’s work together..", { autoClose: 3000, className:"toast-custom", position: "top-left"});
-    } else if (language === "tr") {
-      toast("Hoş geldiniz! Birlikte çalışalım..", { autoClose: 3000, className:"toast-custom",position: "top-left" });
+  const fetchData = async () => {
+    try {
+      const response = await axios.post('https://reqres.in/api/workintech', data[language]);
+      setCurrData(response.data);
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error("Error!");
+    } finally {
+      setLoading(false);  
     }
+  };
 
-  }, [language]); 
+  useEffect(() => {
+    fetchData();
+  
+    const toastMessage = language === "en"
+      ? "Welcome! Let’s work together.."
+      : "Hoş geldiniz! Birlikte çalışalım..";
+      
+    if (toastMessage) {
+      toast(toastMessage, { autoClose: 3000, className: "toast-custom", position: "top-center" });
+    }
+  }, [language]);
 
   const toggleLanguage = () => {
     const newLanguage = language === "en" ? "tr" : "en";
