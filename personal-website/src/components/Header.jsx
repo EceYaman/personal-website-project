@@ -13,11 +13,15 @@ export function Header() {
                 
                 <button
                     onClick={toggleDarkMode}
-                    className={`sm:w-8 sm:h-4 lg:w-12 lg:h-5 rounded-full flex items-center justify-between p-0 transition-all duration-300 ease-in-out ${darkMode ? 'bg-bgGray2' : 'bg-primary'}`}
+                    className={`w-11 h-5 rounded-full flex items-center justify-between p-0 trans ${darkMode ? 'bg-bgGray2' : 'bg-primary'}`}
                 >
                     <span
-                    className={`sm:w-3 sm:h-3 lg:w-4 lg:h-4  rounded-full bg-highlightYellow transition-transform duration-300 ease-in-out 
-                        ${darkMode ? 'translate-x-1' : ' sm:translate-x-4 lg:translate-x-7'}`}
+                        className={`w-4 h-4 rounded-full bg-highlightYellow absolute trans
+                            ${darkMode ? 'translate-x-1' : 'translate-x-6'}`}
+                    />
+                    <span
+                        className={`w-3 h-3 rounded-full  absolute trans
+                            ${darkMode ? 'translate-x-2.5 bg-bgGray2' : 'bg-highlightYellow translate-x-6'}`}
                     />
                 </button>
             

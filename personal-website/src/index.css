@@ -41,3 +41,7 @@
 .toast-custom {
   @apply sm:max-w-[45%] sm:text-xs lg:max-w-[80%] lg:text-sm xl:max-w-full xl:text-base ;
 }
+
+.trans {
+  @apply transition-transform duration-300 ease-in-out
+}
