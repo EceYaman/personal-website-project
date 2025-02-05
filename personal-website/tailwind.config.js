@@ -35,8 +35,6 @@ export default {
         logoDark2: '#4731d3', 
 
         bgGray2: '#3a3a3a', 
-        successGreen2: '#17d18b',
-        linkBlue2:'#0ba6f6' ,
       },
 
       fontFamily: {

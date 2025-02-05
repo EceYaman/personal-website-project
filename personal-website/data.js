@@ -19,19 +19,19 @@ export const data = {
                     link:""
                 },
                 {
-                    logo:"/images/github_image.png",
-                    logoDark:"/images/github_2_image.png",
+                    logo:"https://i.ibb.co/mrs8KC0R/github-image.png",
+                    logoDark:"https://i.ibb.co/k2PxcYK5/github-2-image.png",
                     text:"Github",
                     link:"https://github.com/EceYaman"
                 },
                 {
-                    logo:"/images/linkedin_image.png",
-                    logoDark:"/images/linkedin_2_image.png",
+                    logo:"https://i.ibb.co/cXrVXMSg/linkedin-image.png",
+                    logoDark:"https://i.ibb.co/PGkHQ6Dz/linkedin-2-image.png",
                     text:"Linkedin",
                     link:"https://www.linkedin.com/in/ece-yaman-a7981b21a/"
                 },
         ],
-            profileImage:"/images/profile_image.png",
+            profileImage:"https://i.ibb.co/TMbPzvd0/profile-image.png",
 
         },
         skillsSection: {
@@ -75,21 +75,21 @@ export const data = {
             title: "Projects",
             projects: [
                 {
-                    img:"/images/pizza_image.png",
+                    img:"https://i.ibb.co/21F3Cs6b/pizza-image.png",
                     name:"Pizza",
                     info:"This application, developed with React, allows users to place pizza orders. The order form sends data to an API via Axios, and the order summary is displayed with the response. Data is passed between pages using React state lifting, and tests are conducted with Cypress.",
                     programs: ["react", "redux", "axios" ],
                     links:{"Github":"https://github.com/EceYaman/pizza-project" , "View Site":"https://pizza-project-xi-self.vercel.app/"}
                 },
                 {
-                    img:"/images/witflix_image.png",
+                    img:"https://i.ibb.co/dwL7Lg72/witflix-image.png",
                     name:"WitFlix",
                     info:"Witflix, developed using HTML and CSS, is a video streaming platform design where users can discover movies and TV series. The homepage features content recommendations and clickable movie cards, offering a sleek user experience. ",
                     programs: ["html", "css" ],
                     links:{"Github":"https://github.com/EceYaman/WitFlix" , "View Site":"https://wit-flix-nine.vercel.app/"}
                 },
                 {
-                    img:"/images/movielist_image.png",
+                    img:"https://i.ibb.co/R4Z8s24p/movielist-image.png",
                     name:"Redux Watchlist",
                     info:"I developed an application using React and Redux that allows users to view movies and add or remove their favorite movies from their list. By using Redux for state management, the movie data is fetched from an API and the list is updated based on the user's preferences.",
                     programs: ["react", "redux", "axios" ],
@@ -100,12 +100,12 @@ export const data = {
         },
         footer: {
             title: "Let's work together on your next product",
-            icon:"/images/hand_icon_image.png",
+            icon:"https://i.ibb.co/nX8f7W1/hand-icon-image.png",
             mail:"eceymn35@gmail.com",
             links: [
-                { name: "Personal Blog", url: "https://www.example.com", color: "text-textDark", colorDark:"text-primary2" },
-                { name: "Github", url: "https://github.com/EceYaman", color: "text-successGreen", colorDark:"text-successGreen2" },
-                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a", color: "text-linkBlue", colorDark: "text-linkBlue2" }
+                { name: "Personal Blog", url: "https://www.example.com"},
+                { name: "Github", url: "https://github.com/EceYaman"},
+                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a"}
               ]
         }
     },
@@ -131,19 +131,19 @@ export const data = {
                     link: ""
                 },
                 {
-                    logo:"/images/github_image.png",
-                    logoDark:"/images/github_2_image.png",
+                    logo:"https://i.ibb.co/mrs8KC0R/github-image.png",
+                    logoDark:"https://i.ibb.co/k2PxcYK5/github-2-image.png",
                     text:"Github",
                     link:"https://github.com/EceYaman"
                 },
                 {
-                    logo:"/images/linkedin_image.png",
-                    logoDark:"/images/linkedin_2_image.png",
+                    logo:"https://i.ibb.co/cXrVXMSg/linkedin-image.png",
+                    logoDark:"https://i.ibb.co/PGkHQ6Dz/linkedin-2-image.png",
                     text:"Linkedin",
                     link:"https://www.linkedin.com/in/ece-yaman-a7981b21a/"
                 },
             ],
-            profileImage: "/images/profile_image.png",
+            profileImage: "https://i.ibb.co/TMbPzvd0/profile-image.png",
         },
         skillsSection: {
             title: "Yetenekler",
@@ -180,21 +180,21 @@ export const data = {
             title: "Projeler",
             projects: [
                 {
-                    img: "/images/pizza_image.png",
+                    img: "https://i.ibb.co/21F3Cs6b/pizza-image.png",
                     name: "Pizza",
                     info: "React ile geliştirdiğim bu uygulama, kullanıcıların pizza siparişi verebileceği bir platform sunuyor. Sipariş formu, Axios ile API'ye veri gönderiyor, gelen yanıtla sipariş özeti gösteriliyor. React state lifting yöntemiyle veriler sayfalar arasında aktarılıyor ve Cypress ile testler yapıldı.",
                     programs: ["react", "redux", "axios" ],
                     links:{"Github":"https://github.com/EceYaman/pizza-project" , "Siteyi Gör":"https://pizza-project-xi-self.vercel.app/"}
                 },
                 {
-                    img: "/images/witflix_image.png",
+                    img: "https://i.ibb.co/dwL7Lg72/witflix-image.png",
                     name: "WitFlix",
                     info: "HTML ve CSS kullanarak geliştirdiğim Witflix, kullanıcıların film ve dizi içeriklerini keşfedebileceği bir video akış platformu tasarımıdır. Ana sayfada içerik önerileri ve tıklanabilir film kartları ile şık bir kullanıcı deneyimi sunulmuştur.",
                     programs: ["html", "css", ],
                     links:{"Github":"https://github.com/EceYaman/WitFlix" , "Siteyi Gör":"https://wit-flix-nine.vercel.app/"}
                 },
                 {
-                    img: "/images/movielist_image.png",
+                    img: "https://i.ibb.co/R4Z8s24p/movielist-image.png",
                     name: "Redux Watchlist",
                     info: "React ve Redux kullanarak, kullanıcıların filmleri görüntüleyip beğendikleri filmleri listelerine ekleyip çıkarabildikleri bir uygulama geliştirdim. Redux ile merkezi durum yönetimi sağlayarak, film verilerini API’den çekiyor ve kullanıcıların tercihlerine göre listeyi güncelliyorum.",
                     programs: ["react", "redux", "axios" ],
@@ -204,12 +204,12 @@ export const data = {
         },
         footer: {
             title: "Bir sonraki ürününüz üzerinde birlikte çalışalım",
-            icon:"/images/hand_icon_image.png",
+            icon:"https://i.ibb.co/nX8f7W1/hand-icon-image.png",
             mail: "eceymn35@gmail.com",
             links: [
-                { name: "Kişisel Blog", url: "https://www.example.com", color: "text-textDark", colorDark:"text-primary2" },
-                { name: "Github", url: "https://github.com/EceYaman", color: "text-successGreen", colorDark:"text-successGreen2" },
-                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a", color: "text-linkBlue", colorDark: "text-linkBlue2" }
+                { name: "Kişisel Blog", url: "https://www.example.com" },
+                { name: "Github", url: "https://github.com/EceYaman"},
+                { name: "Linkedin", url: "https://www.linkedin.com/in/ece-yaman-a7981b21a" }
               ]
         }
     },

@@ -20,7 +20,13 @@ export function Footer() {
                     <a 
                         key={index}
                         href={link.url}
-                        className={`ml-7 sm:text-xs lg:text-s xl:text-base ${darkMode ? link.colorDark : link.color}`} 
+                        className={`ml-7 sm:text-xs lg:text-s xl:text-base ${
+                            index === 0
+                              ? "text-textLight"  
+                              : index === 1
+                              ? "text-successGreen"  
+                              : "text-linkBlue"  
+                          }`}
                         target="_blank" 
                     >
                         {link.name}
