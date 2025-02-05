@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { data } from "../../public/data";
+import { data } from "../../data";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import axios from "axios";
 import { toast } from "react-toastify";
